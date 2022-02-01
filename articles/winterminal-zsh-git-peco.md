@@ -6,7 +6,7 @@ topics: ["windowsterminal", "zsh", "git", "peco", "go"]
 published: false
 ---
 
-Windows Terminal + Git for Windows SDK + zsh で git コマンドの結果を peco りたいけど、画面が崩れてキー入力も受けなくなって Terminal を閉じるしかない事が発生するようにいつのまにかなってしまって困り。ブランチが大量にあることに起因しているのかと思いきやそうでもなく、sh で返す量を調整してから peco に渡してもダメだったので間に挟むプログラムを作ってみた。
+Windows Terminal + Git for Windows SDK + zsh で git コマンドの結果を peco りたいけど、画面が崩れてキー入力も受けなくなって Terminal を閉じるしかない事が発生するようにいつのまにかなってしまって困る。ブランチが大量にあることに起因しているのかと思いきやそうでもなく、sh で返す量を調整してから peco に渡してもダメだったので間に挟むプログラムを作ってみた。
 
 @[card](https://github.com/basyura/pecogit)
 

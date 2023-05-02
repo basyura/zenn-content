@@ -3,7 +3,7 @@ title: "ActionBehavior.Livet で Action を簡単に呼ぶ"
 emoji: "🦔"
 type: "tech" # tech: 技術記事 / idea: アイデア
 topics: ["WPF", "MVVM", "Livet"]
-published: false
+published: true
 ---
 
 ## 何かしらのちょっとした GUI アプリケーションを作るとき

@@ -172,3 +172,5 @@ public class Initialize : ActionCommand<MainWIndowViewModel>
 Livet を使わずに、もろもろを含んだ Framework を作ってみたりしたけど ([Eleve](https://www.nuget.org/packages/Eleve/))、テンプレートや拡張を作るのがクソめんどくさすぎるし、機能として信頼できる Livet を使う方が楽なのもあって欲しいところだけ組み込む形をとってみた。実装が雑なところは否めないけど。
 
 GUI アプリケーションを作るタイミングはそんなに無いので、今後機能追加していくかは謎だけど作ろうと思ったときにどうするかの自分の型ができたので細々とやっていくつもり。
+
+※ 名前がいろいろと大丈夫なのかがあるけど気にしない。

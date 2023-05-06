@@ -54,6 +54,12 @@ namespace Hoge
 {
     public class MainWIndowViewModel : ViewModel
     {
+        private string _Message;
+        public string Message
+        {
+            get => _Message;
+            set => RaisePropertyChangedIfSet(ref _Message, value);
+        }
     }
 }
 
@@ -75,7 +81,7 @@ namespace Hoge
     {
         public override Task<bool> Execute(object sender, EventArgs evnt, object parameter)
         {
-            System.Windows.MessageBox.Show("hello");
+            ViewModel.Message = "Hello";
 
             return OK;
         }
@@ -97,14 +103,21 @@ Microsoft.Xaml.Behaviors を使ってイベントに応じた Action 呼び出�
     <Window.DataContext>
         <vm:MainWindowViewModel/>
     </Window.DataContext>
-  
-    <Button Content="Hello">
-        <i:Interactions.Triggers>
-          <i:EventTrigger EventName="Click">
-              <ab:Execute Action="Hello" />
-          </i:EventTrigger>
-        </i:Interactions.Triggers>
-    </Button>
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <TextBlock Text="{Binding Message}" />
+        <Button Grid.Row="1" Content="Hello">
+            <i:Interactions.Triggers>
+              <i:EventTrigger EventName="Click">
+                  <ab:Execute Action="Hello" />
+              </i:EventTrigger>
+            </i:Interactions.Triggers>
+        </Button>
+    </Grid>
 </Window>
 ```
 

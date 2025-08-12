@@ -41,6 +41,16 @@ published: false # true when ready to publish
 - Images should be placed in the `images/` directory and referenced relatively
 - Published articles sync to zenn.dev/basyura
 
+## Git Commit Rules
+
+コミットログの1行目は以下の形式に従う：
+```
+update : [記事のタイトル]
+```
+
+- タイトルは記事の frontmatter の `title:` にある文字列を使用する
+- 例: `update : ChatGPTで Vim ライクなキーバインドを使う`
+
 
 ## 日本語文章の口調ルール
 

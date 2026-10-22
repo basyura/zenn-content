@@ -3,7 +3,7 @@ title: "Inkdrop style 変更"
 emoji: "🎨"
 type: "tech" # tech: 技術記事 / idea: アイデア
 topics: [Inkdrop]
-published: false
+published: true
 ---
 
 ## はじめに
